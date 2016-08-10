@@ -1,0 +1,5 @@
+# 0483:df11 - Tila Mk3 based on Mircropython board
+ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", ENV{ID_MM_DEVICE_IGNORE}="1"
+ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", ENV{MTP_NO_PROBE}="1"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="0666"
+KERNEL=="ttyACM*", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="0666"
